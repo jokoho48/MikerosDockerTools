@@ -5,4 +5,4 @@ RUN apt-get update && apt-get install -y apt-utils wget python3 liblzo2-2 libvor
     tar zxvf mikerostools.tgz --strip=1 && \
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib/
 
-CMD [ "/bin/bash" ]
+ENTRYPOINT ["/bin/bash"]
